@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta char="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <nav>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+
+    <header id="top">
+      <h1 class="heading">Hi, I'm a Elijah Kierre C. Besa</h1>
+      <h2 class="subheading">Aspiring to be a Web Developer</h2>
+      <button class="btn-header">Get In Touch</button>
+    </header>
+
+    <main>
+      <div class="about-container" id="about">
+        <h1>About Me</h1>
+        <div class="column">
+        <div class="column1">
+          <p>I'm Elijah Kierre C. Besa, a junior high school student with a passion for web development and a clear vision for my future in tech. Currently, I'm building my foundation in HTML, CSS, and JavaScript, and I'm excited to expand my skills into backend technologies like MySQL, PHP, and Laravel. My goal is to become a software engineer or full-stack developer, and I'm actively working toward that dream by practicing and learning new technologies every day. I believe in starting early and building strong fundamentals that will help me create meaningful digital solutions in the future.</p>  
+        </div>
+        <div class="column2">
+          <img src="/Photo/Me.webp" alt="Profile Picture">
+        </div>
+       </div>
+      </div>
+
+      <div class="skills-container" id="skills">
+        <h1>Skills</h1>
+        <div class="skills-grid">
+          <div class="skill-item">HTML</div>
+          <div class="skill-item">CSS</div>
+          <div class="skill-item">JavaScript</div>
+        </div>
+      </div>
+
+      <div class="projects" id="projects">
+        <h1>Projects</h1>
+        <h3>Coming Soon...</h3>
+      </div>
+    </main>
+   
+    <footer id="contact">
+      <h1>Contact Me</h1>
+    <form action="https://formsubmit.co/elaibesa48@gmail.com" method="POST">
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="your.email@example.com" required><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" placeholder="Your Message..." required></textarea>
+      <input type="hidden" name="_subject" value="New message from Portfolio contact form">
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="submit" value="Send Message">
+    </form>
+
+      <p>&copy; 2024 Elijah Kierre C. Besa. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

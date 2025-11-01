@@ -1,0 +1,286 @@
+:root {
+    --bg-dark: hsl(228 79% 2%);
+    --bg: hsl(222 55% 5%);
+    --bg-light: hsl(220 35% 10%);
+    --text: hsl(220 100% 98%);
+    --text-muted: hsl(220 35% 73%);
+    --highlight: hsl(220 20% 42%);
+    --border: hsl(220 26% 31%);
+    --border-muted: hsl(220 37% 20%);
+    --primary: hsl(220 78% 76%);
+    --secondary: hsl(40 53% 60%);
+    --danger: hsl(9 26% 64%);
+    --warning: hsl(52 19% 57%);
+    --success: hsl(146 17% 59%);
+    --info: hsl(217 28% 65%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  background-color: var(--bg-light);
+  color: var(--text);
+  font-family: 'Roboto', sans-serif, Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* 
+Navigation Bar Styles
+*/
+nav{
+  width:100%;
+  position: sticky;
+  top:0;
+  z-index: 1000;
+}
+
+nav ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: space-around;
+   background-color: var(--border);
+   font-size: 1.3rem;
+   padding: 0.5em 1.3em;
+   width:100%;
+   cursor: pointer;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: var(--text);
+}
+
+/* 
+Header Styles
+*/
+header{
+  padding: 2em 1em;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  padding:14em 2em;
+}
+.heading{
+  margin-bottom:0;
+  font-size: 2rem;
+}
+.subheading{
+  margin-top:0;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+}
+.btn-header{
+  font-size: 1.5rem;
+  background-color: var(--primary);
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Roboto;
+  font-weight: 700;
+  color: var(--text);
+  width: fit-content;
+  transition: transform 0.3s ease;
+}
+.btn-header:hover{
+  transform: scale(1.08);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* 
+Main Content Styles
+*/
+
+/*
+About Section Styles
+*/
+main{
+  margin:2em;
+}
+
+.about-container{
+  padding: 6em 2em;
+}
+
+.about-container h1{
+  font-size: 2rem;
+  margin-bottom: 0;
+  text-align:center;
+  width:100%;
+}
+
+.column{
+  padding: .1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.column1 {
+  width:50%;
+  font-size: 1.1rem;
+}
+
+.column2 {
+  width:40%;
+}
+
+.column2 img{
+  width:100%;
+  object-fit: cover;
+  border-radius: 20em;
+}
+
+/*
+skills Section Styles
+*/
+.skills-container{
+  margin-top: 5em;
+  padding:8em 2em;
+}
+.skills-container h1{
+  font-size: 2rem;
+  margin-bottom: 1.5em;
+  text-align:center;
+  width:100%;
+}
+.skills-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-around;
+  align-items: center;
+  width:100%;
+  margin-top: 1em;
+}
+.skill-item{
+  border: .17em solid var(--border-muted);
+  background-color: var(--bg);
+  font-size: 1.2rem;
+  width:100%;
+  max-width: 12em;
+  padding: 2.5em;
+  font-weight: 700;
+  border-radius: 1em;
+  text-align: center;
+  box-shadow: 2px 4px 8px hsla(0, 0%, 20%, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+.skill-item:hover{
+  box-shadow: 2px 4px 8px hsla(0, 0%, 70%, 0.2);
+}
+
+/*
+projects Section Styles
+*/
+.projects{
+  margin-top: 5em;
+  padding:6em 2em;
+}
+.projects h1{
+  font-size: 2rem;
+  margin-bottom: 1.5em;
+  text-align:center;
+  width:100%;
+}
+.projects h3{
+  font-size: 1.5rem;
+}
+
+/*
+footer Styles
+*/
+footer{
+  margin-left: 2em;
+}
+
+footer h1{
+  text-align: center;
+  margin-top: 5em;
+  font-size: 1.5rem;
+}
+
+footer label{
+  font-size: 1.2rem;
+}
+
+footer input{
+  margin-bottom: 3em;
+  font-size: 1rem;
+}
+
+footer input[type="text"], input[type="email"]{
+ width:95%;
+ padding: 0.9em;
+ font-size: 1rem;
+ border-radius: .5em;
+}
+
+footer textarea{
+  font-size: 1rem;
+  width:95%;
+  height: 10em;
+  padding: 0.9em;
+  border-radius: .5em;
+  margin-bottom: 2em;
+ }
+
+ textarea::placeholder {
+  font-size: 1.2rem;
+ }
+
+ footer input[type="submit"]{
+  font-size: 1.2rem;
+  background-color: var(--primary);
+  width: fit-content;
+  border: none;
+  padding: 0.7em 1.2em;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  cursor: pointer;
+  font-family: Roboto;
+  font-weight: 700;
+  color: var(--text);
+ }
+
+ footer p{
+  text-align: center;
+  margin-top: 0;
+ }
+
+ @media (max-width: 768px) {
+  nav ul{
+    font-size: 1.15rem;
+    gap:.5em;
+  }
+
+.column{
+  flex-direction: column;
+}
+
+ .column1 {
+  width:100%;
+  font-size: 1.1rem;
+}
+
+.column2 {
+  width:70%;
+}
+
+}
